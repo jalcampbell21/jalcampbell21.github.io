@@ -1,0 +1,16 @@
+/* Added CSS Style from Starter Bootstrap Template */
+
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+/*Personally added CSS */
+
+#index-page-photo {
+  height: 350px;
+  width: 200px;
+}
