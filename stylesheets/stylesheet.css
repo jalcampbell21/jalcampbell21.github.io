@@ -255,3 +255,8 @@ body {
 }
 
 /*Personally added CSS */
+
+#index-page-photo {
+  height: 300px;
+  width: 250px;
+}
