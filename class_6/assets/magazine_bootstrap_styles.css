@@ -1,0 +1,108 @@
+/**************************************
+KEEPIN' IT CURLY MAGAZINE CSS STYLES
+**************************************/
+
+
+
+/*--------General Magazine Body--------*/
+
+body {
+	background: radial-gradient(circle, white 5%, transparent 5%),
+  				radial-gradient(circle, white 5%, papayawhip 5%) 50px 50px;
+	background-size:100px 100px;
+	font-family: 'PT Serif', serif;
+}
+
+
+
+/*--------Featured Story Section/Jumbotron--------*/
+
+.jumbotron {
+	background: rgba(255, 255, 255, 0.5);
+
+}
+
+.jumbotron > .text-center {
+	color: #a39888;
+	font-family:'Dancing Script', cursive;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+
+
+/*--------Main Navigation Bar--------*/
+
+.navbar{
+	background: #886994;
+}
+
+.navbar-header > .navbar-brand:link {
+	font-family:'Dancing Script', cursive;
+	font-size: 1.7em;
+}
+
+.navbar-header > .navbar-brand:link,
+#nav-links:link, {
+	color: #e5dfd4;
+}
+
+.navbar-header > .navbar-brand:visited, #nav-links:visited {
+	color: #dbd2c3;
+}
+
+.navbar-header:hover > .navbar-brand:hover,
+#nav-links:hover {
+	color: #bacab4;
+}
+
+
+
+/*--------Articles--------*/
+
+h2 {
+	font-family:'Dancing Script', cursive;
+	font-size: 2.2em;
+	font-weight: bold;
+}
+
+#most_popular > h3 {
+	font-family:'Dancing Script', cursive;
+	font-size: 2.2em;
+	font-weight: bold;
+}
+
+.article-link:link, .image-link:link {
+	color: #886994;
+}
+
+.article-link:visited, .image-link:visited {
+	color: #a39888;
+}
+
+.article-link:hover, .image-link:hover  {
+	color: #76956A;
+}
+
+
+
+/*--------Sidebar--------*/
+
+.sidebar-h3-header{
+	color: black;
+}
+
+.sidebar-h3-header:hover {
+	text-decoration: none;
+	color: #a39888;
+}
+
+.lorem-para-text {
+	color:black;
+}
+
+.lorem-para-text:hover {
+	color: #76956A;
+}
+
+

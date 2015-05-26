@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Magazine Site - Home</title>
+    <meta charset="UTF-8">
+    <link data-require="bootstrap-css@*" data-semver="3.3.1" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" /> <!-- include Bootstrap file; in this case, it's from a CDN (content delivery network, which means it's stored on the cloud) -->
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/magazine_bootstrap_styles.css">
+  </head>
+
+  <body>
+
+    <!-- MAIN NAVIGATION BAR -->
+    <nav class="navbar navbar-default"> <!-- navbar says this is the navigation bar header (main navigation) for the site and adds the appropriate padding and spacing, as well as media queries for responsiveness. navbar-default gives it the default gray coloration -->
+      <div class="container">
+        <div class="navbar-header"> <!-- navbar-header encapsulates the main content of the navigation -->
+          <a href="#" class="navbar-brand">Keepin' It Curly Magazine</a> <!-- navbar-brand only works on the <a> tag and is used for logos -->
+          <ul class="nav navbar-nav navbar-left"> <!-- nav means it's a list of navigation links; navbar-nav means it's the navigation links for the main navbar; navbar-left floats the links to the left -->
+            <li><a href="#" id="nav-links">Home</a></li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search"> <!-- navbar-form is used for the styling of any form (including search) in the navigation -->
+            <div class="form-group"> <!-- form-group is used to group related form elements, including the label, control (such as input and select), and any buttons that correspond with that form item -->
+              <input type="text" class="form-control" placeholder="Search"> <!-- form-control is used for the controls (input, select, etc) of a form to give it padding, rounded borders, a gray border, etc -->
+            </div>
+            <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i> Search</button> <!-- btn is the class for Bootstrap buttons that adds border radius, a border, padding, and removes the default gradient the browser adds to buttons. btn-default is for the default gray or white coloration. -->
+            <!-- glyphicons are included in Bootstrap, and are a set of common UI icons such as plus symbols, minus symbols, magnifying glasses, users, groups, etc. It is a font and as such can be styled using color and font-size; it works by using the CSS content property along with a code for each icon. The glyphicon class is used to add basic glyphicon styles while the icon specific class is used to insert the specific content (the code for the icon) -->
+          </form>
+          <div class="clearfix"></div> <!-- since we added a float (navbar-left) clear the floats using clearfix -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="container"> <!-- container encapsulates the content and adds margin and padding to the sides so it's not flush with the viewport -->
+      <div class="row"> <!-- row is used to contain columns and is 100% width of the container; it should include columns that add up to 12 cols, but if you add more, it will force the col that goes past the 12th slot down beneath the others. -->
+        
+        <div class="col-md-9 col-sm-9 col-xs-9"> <!-- Bootstrap's default cols are col-md-1 through col-md-12. There are also classes for col-lg-* (where the * is a number), col-sm-*, and col-xs-*. This is so you can specify the width of the columns for different screen sizes, so you can show 2 cols on a small screen (col-sm-6) versus 4 columns on a large screen (col-lg-3) for example. All columns are responsive but will collapse to 1 col on mobile unless specified (xs). Here, we're using col-md-9 for the main content, and col-md-3 for the sidebar -->
+          <section id="featured_story">
+            <div class="jumbotron"> <!-- Make font and buttons larger; used for the "hero" image or key content on your site above the fold -->
+              <div class="text-center"> <!-- Bootstrap has classes for aligning text: text-center, text-right, and text-left -->
+                <h1>Keepin' It Curly Magazine</h1>
+              </div>
+            </div>
+          </section>
+      
+          <section id="main_content">
+            <h2>Categories</h2>
+            
+            <div class="col-md-12 col-sm-12 col-xs-12"> <!-- We can create additional columns in our layout by using nested columns. Here, we want the news card to fill the entire width of col-md-9, so we'll use the 12 slot col -->
+              <article class="panel panel-default"> <!-- panel is used to add padding, border, and border radius around content - to box it. It's used for panels, accordions, and the "card" design trend. panel-default is for the optional gray header and/or footer for the panel; it's for contextual coloring.  --> <!-- <article> tag is used since the content wrapped within is a news story and could make contextual sense outside of the main page content -->
+                <div class="panel-heading"> <!-- For the gray heading on the panel; separates it from the rest of the content in the panel -->
+                  <span class="label label-primary pull-left"><i class="glyphicon glyphicon-eye-open"></i> Lifestyle</span> <!-- label is a class used to add background color, a bit of padding, and font coloration to set text off as a label or tag. It has contextual coloring along with label-defaul, label-primary, label-warning, etc. We're also using the pull-left class here to float it left since we're also floating content to the right, and though left alignment is the default, it will not align at the same baseline (it will be off and one element will be lower than the other) -->
+                  <span class="pull-right">4 hours ago</span> <!-- pull-right floats it to the right -->
+                  <div class="clearfix"></div> <!-- clear the floats -->
+                </div>
+                <div class="panel-body"> <!-- Wrap the main panel content in panel-body -->
+                  <div class="col-md-6 col-sm-6 col-xs-6"> <!-- We need more columns - one on the left for the title, desc, and the link and one on the right for the image. So we'll split the cols in half. The full width of both cols will fill the space of col-md-12 that it's wrapped in, which in turn inherits the width from col-md-9 at the top -->
+                    <h3>Is baking soda safe to use on low-porosity natural hair?</h3>
+                    <p>Keffiyeh pickled pop-up chillwave. Umami whatever asymmetrical roof party. Disrupt freegan retro kale chips.</p>
+                    <a href="#" class="article-link">Read more <i class="glyphicon glyphicon-chevron-right"></i></a>
+                  </div>
+                   <div class="col-md-6 col-sm-6 col-xs-6">
+                      <img src="http://files.kaboompics.com/upload/693_min.jpg" alt="Woman with curly hair" class="img-responsive"> <!-- img-responsive adds CSS properties of width (set to 100%) and height (set to auto) to make it responsive with the col width -->
+                   </div>
+                </div>
+              </article>
+            </div> <!-- article 1-->
+            
+            <div class="col-md-6 col-sm-6 col-xs-6"> <!-- This article 2 card will be next to the article 3 card; this is to provide visual interest and use the card's sizing to indicate importance of the articles and what you want users to draw their attention to -->
+              <article class="panel panel-default">
+                <div class="panel-heading">
+                  <span class="label label-warning pull-left"><i class="glyphicon glyphicon-user"></i> Fashion</span>
+                  <span class="pull-right">8 hours ago</span>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <h3>The latest accessories to style your hair with this spring</h3>
+                    <p>Gastropub hoodie bespoke cred actually literally.</p>
+                    <a href="#" class="article-link">Check out our picks <i class="glyphicon glyphicon-chevron-right"></i></a>
+                  </div>
+                   <div class="col-md-6 col-sm-6 col-xs-6">
+                      <img src="http://files.kaboompics.com/upload/61_min.jpg" alt="Flower hair bows" class="img-responsive">
+                   </div>
+                </div>
+              </article>
+            </div><!-- article 2 -->
+            
+            
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <article class="panel panel-default">
+                <div class="panel-heading">
+                  <span class="label label-danger pull-left"><i class="glyphicon glyphicon-globe"></i> Politics</span>
+                  <span class="pull-right">10 hours ago</span>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <h3>Rules and regulations from the 'natural hair police'</h3>
+                    <p>Bitters Portland PBR, brunch kitsch typewriter DIY Odd Future wolf pickled Carles Tumblr.</p>
+                    <a href="#" class="article-link">Read more <i class="glyphicon glyphicon-chevron-right"></i></a>
+                  </div>
+                   <div class="col-md-6 col-sm-6 col-xs-6">
+                      <img src="http://cdn.morguefile.com/imageData/public/files/w/wax115/preview/fldr_2005_02_12/file000956395960.jpg" alt="Stop Sign" class="img-responsive">
+                   </div>
+                </div>
+              </article>
+            </div><!-- article 3 -->
+            
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <article class="panel panel-default">
+                <div class="panel-heading">
+                  <span class="label label-success pull-left"><i class="glyphicon glyphicon-tree-conifer"></i> Environment</span>
+                  <span class="pull-right">14 hours ago</span>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <h3>Are your staple products 'environment-friendly'?</h3>
+                    <p>PBR sriracha drinking vinegar, skateboard DIY mlkshk Godard dreamcatcher occupy Williamsburg iPhone whatever. Shoreditch gluten-free trust fund, gastropub fingerstache pork belly kogi normcore asymmetrical Neutra you probably haven't heard of them Austin VHS listicle.</p>
+                   <a href="#" class="article-link">Read more <i class="glyphicon glyphicon-chevron-right"></i></a>
+                  </div>
+                   <div class="col-md-6 col-sm-6 col-xs-6">
+                      <img src="http://finda.photo/image/4625/thumbnail/original" alt="Dandelion" class="img-responsive">
+                   </div>
+                </div>
+              </article>
+            </div> <!-- article 4-->
+
+          </section>
+        </div><!-- end col-9 -->
+        
+        <!-- LATEST NEWS SIDEBAR -->
+        <aside id="latest_news" class="col-md-3 col-sm-3 col-xs-3"> <!--shows latest 4 stories--> <!-- Using the <aside> tag since it's set apart from the main content -->
+          <h2>Latest news</h2>
+          <a href="#"> <!-- Wrap each article in an <a> tag so the whole card is clickable -->
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="sidebar-h3-header">The end of perm rods? Heated rollers for curling natural hair</h3>
+              </div>
+              <div class="panel-body">
+                <div class="col-sm-7 col-xs-7">
+                  <span class="label label-default"><i class="glyphicon glyphicon-phone"></i> Tech</span>
+                  <p class="lorem-para-text">Lorem ipsum</p>
+                </div>
+                <div class="col-sm-5 col-xs-5">
+                  <img src="http://cdn.morguefile.com/imageData/public/files/t/taliesin/preview/fldr_2008_11_02/file000372831471.jpg" alt="A lady whose hair is set with perm rods" class="img-responsive"> 
+                </div>
+              </div>
+            </article>
+          </a>
+          
+          <a href="#">
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="sidebar-h3-header">Awesome getaways for the summer (even if you are natural)</h3>
+              </div>
+              <div class="panel-body">
+                <div class="col-sm-7 col-xs-7">
+                  <span class="label label-default"><i class="glyphicon glyphicon-plane"></i> Travel</span>
+                  <p class="lorem-para-text">Lorem ipsum</p>
+                </div>
+                <div class="col-sm-5 col-xs-5">
+                  <img src="http://finda.photo/image/11373/thumbnail/original" alt="Palm tree leaves overlay a body of water" class="img-responsive"> 
+                </div>
+              </div>
+            </article>
+          </a>
+          
+          <a href="#">
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="sidebar-h3-header">Aloe vera sensitivity</h3>
+              </div>
+              <div class="panel-body">
+                <div class="col-sm-7 col-xs-7">
+                  <span class="label label-default"><i class="glyphicon glyphicon-glass"></i> Health</span>
+                  <p class="lorem-para-text">Lorem ipsum</p>
+                </div>
+                <div class="col-sm-5 col-xs-5">
+                  <img src="http://files.kaboompics.com/upload/1057_min.jpg" alt="Budding plants" class="img-responsive"> 
+                </div>
+              </div>
+            </article>
+          </a>
+          
+          <a href="#">
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="sidebar-h3-header">An interview with Jill Scott</h3>
+              </div>
+              <div class="panel-body">
+                <div class="col-sm-7 col-xs-7">
+                  <span class="label label-default"><i class="glyphicon glyphicon-music"></i> Music</span>
+                  <p class="lorem-para-text">Lorem ipsum</p>
+                </div>
+                <div class="col-sm-5 col-xs-5">
+                  <img src="http://pixabay.com/static/uploads/photo/2015/02/06/22/08/microphone-626618_640.jpg" alt="Microphone" class="img-responsive"> 
+                </div>
+              </div>
+            </article>
+          </a>
+
+          <a href="#">
+            <section id="ad"> <!-- An ad in the sidebar -->
+              <h6 class="sr-only">Paid content</h6>
+              <img src="http://cdn.morguefile.com/imageData/public/files/e/earl53/preview/fldr_2008_11_13/file0001602282274.jpg" alt="Farmer's Market Advertisement" class="img-responsive">
+            </section>
+          </a>
+
+        </aside>
+      </div><!-- /end row -->
+        
+        <div class="row"> <!-- Open a new row since we no longer have the sidebar or the main content two col layout; we can still have more than one col, but it will be per card instead of in the parent <div> tag -->
+          <div class="col-md-12 col-sm-12 col-xs-12"> <!-- Separate section for most popular content; also fills the entire width of the page.-->
+            <section id="most_popular">
+              <h3>Story of the hour</h3>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <article class="panel panel-default">
+                  <div class="panel-heading">
+                    <span class="label label-info pull-left"><i class="glyphicon glyphicon-plus"></i> Health</span>
+                    <span class="pull-right">16 hours ago</span>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="panel-body">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                      <h3>Gasping for breath: What you need to know about the Brazilian Blowout</h3>
+                      <p>Meggings Williamsburg twee freegan, put a bird on it church-key master cleanse butcher cliche. Aesthetic farm-to-table iPhone retro, food truck keffiyeh Vice hashtag tilde health goth pug. Pickled scenester pour-over, swag taxidermy photo booth literally cray farm-to-table lo-fi skateboard street art Wes Anderson fixie letterpress. High Life Helvetica 8-bit, butcher flexitarian keffiyeh Williamsburg Bushwick sustainable umami pork belly pop-up retro hashtag whatever.</p>
+                      <a href="#" class="article-link">Read the story <i class="glyphicon glyphicon-chevron-right"></i></a>
+                    </div>
+                     <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img src="http://cdn.morguefile.com/imageData/public/files/k/kevinrosseel/preview/fldr_2008_11_28/file0001083178990.jpg" alt="Hair products" class="img-responsive">
+                     </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+        
+    </div>
+    <footer>
+      <div class="container">
+        <small>&copy; 2015 Magazine Site</small>
+      </div>
+    </footer>
+  </body>
+
+</html>
