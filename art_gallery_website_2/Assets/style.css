@@ -1,0 +1,143 @@
+html, body, header, section, nav, footer {
+	margin:0;
+	padding:0;
+	font-family: "Raleway SemiBold", "Arial Bold", "Helvetica Bold", sans-serif;
+	font-size:1.05em;
+	color:#1a1a1a;
+}
+
+header, section, nav, footer {
+	display:block;
+}
+
+section{
+	margin:1em 0;
+	/*margin: top right bottom left (this is the order of how setting the margin would go); */
+	/*
+
+	margin-top:1em;
+	margin-bottom:0;
+	margin-left:1.04em;
+	margin-right1.03em; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:600;
+	font-family: "Raleway SemiBold", "Arial Bold", "Helvetica Bold", sans-serif;
+}
+
+h1 {
+	font-size:4em;
+}
+
+h2 {
+	font-size:2em;
+}
+
+body{
+	background-color:#f1f1f1;
+}
+
+a {
+	font-weight: normal;
+	font-family: "Raleway SemiBold", "Arial Bold", "Helvetica Bold", sans-serif;
+}
+.container {
+	padding:0 15px;
+	margin:0 auto;
+}
+
+.container:before, .container:after{
+	display:table;
+	content: " ";
+{
+
+.container:after{
+	clear:both;
+}
+
+.row {
+	margin:0;
+}
+
+.row:before, .row:after{
+	display:table;
+	content: " ";
+}
+
+.row:after; {
+	clear:both;
+}
+
+.col-25, .col-50{
+	min-height:1px;
+	padding:0 15px;
+	margin: 0 0 1em 0;
+	float:left;
+}
+
+.col-25{
+	width:25%;
+}
+
+.col-50{
+	width:50%;
+}
+
+#slider {
+	height:600px;
+	overflow:hidden;
+}
+
+#slide_text {
+	position:absolute;
+	color:#fff;
+	left:35%
+	top:20%;
+	padding:8px 15px;
+	margin:0;
+	background-color:rgba(0,0,0, 0.5);
+
+}
+
+#slider ul {
+	margin:0;
+	padding:0;
+}
+
+#slider ul li {
+	list-style-type: none;
+
+#slider ul li img {
+	width:100%;
+}
+
+#controls > a {
+	text-decoration: none;
+	font-size:1.5em;
+	font-weight: 600;
+	font-family: "Raleway SemiBold", "Arial Bold", "Helvetica Bold", sans-serif;
+	color: rgba(255,255,255,0.5);
+	position:absolute;
+	top:30%;
+	transition: 1s linear all;
+}
+
+#controls > a:hover {
+	color:rgba(255,255,255,1);
+	transition: 1s linear all;
+}
+
+.arrow-big{
+	padding:12px 15px;
+	border-radius: 50px;
+	background-color:rgba(0, 0, 0, 0.75);
+}
+
+#prev_slide {
+	left:1em;
+}
+
+#next_slide {
+	right:1em;
+}
