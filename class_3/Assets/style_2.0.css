@@ -1,0 +1,312 @@
+/* Styles go here */
+
+html, body, header, section, nav, footer {
+  margin:0; /* Set margin and padding to 0 at first to remove default browser styling */
+  padding:0;
+  font-family:Raleway, Helvetica, Arial, sans-serif; /* Set the font stack for the entire document */
+  font-size: 1.05em; /* I'm using ems for font-size; 1em is the default font size (i.e., if it's 12px then 1em = 12px). If you use ems to describe widths and heights, then those elements will change based on the default font size - meaning if a fallback font is used then it will be more forgiving and won't be as likely to compromise your design */
+  color:#1a1a1a; /* Dark gray in hexadecimal */
+}
+
+section, footer, nav, header {
+  display:block; /* Set the HTML5 elms to display:block in case the browser doesn't have a default for them */
+}
+
+section {
+  margin:1em 0; /* Add top and bottom margin to the section elm since we've used it to chunk our sections; gives room to breathe */
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight:normal; /* May need to use 600, but on my computer it's 'normal'. This removes the faux-bolding */
+  font-family: "Raleway SemiBold", "Helvetica Bold", "Arial Bold", sans-serif; /* Specify the bold the typeface designer created */
+}
+
+h1 {
+  font-size:4em; /* Bump the font sizes up - just for the design */
+}
+
+h2{
+  font-size:2em;
+}
+
+body{
+  background-color: #f1f1f1; /* Light gray for the bg color */
+}
+
+a {
+  font-weight:normal; /* Or 600 */
+  font-family:"Raleway SemiBold", "Arial Bold", sans-serif;
+}
+
+.container {
+  padding:0 15px; /* Add padding to the right and left so it won't be flush against the viewport */
+  margin:0 auto; /* Sets top and bottom margins to 0 and auto will center with given width */
+}
+
+.container:before, .container:after{ /* :before and :after are selectors that insert content before and after a given class, id, or elm */
+  display: table; /* Display:table is used to force the elm using this class to behave as the <table> tag. Prevents using tables for layout */
+  content: " "; /* Inserts empty content before and after elm using container class */
+}
+
+.container:after{
+  clear:both; /* In case you use any floats in the container, be sure to clear them so they won't mess the rest of your layout up */
+}
+
+.row {
+  margin:0; /* Ensure margin is 0 on rows since this will span full width of the page */
+}
+
+.row:before, .row:after{
+  display:table;
+  content: " ";
+}
+
+.row:after {
+  clear:both;
+}
+
+.col-25, .col-50{
+  min-height:1px; /* Set a minimum height to ensure that the column displays; if there was no height and no content, then it wouldn't render */
+  padding:0px 15px; /* Add a "gutter" - spacing between your columns */
+  margin:0 0 1em 0; /* Add bottom margin */
+  float:left; /* Float them to the left so they will render next to each other; otherwise, they may render below each other */
+}
+
+.col-25 {
+  width:25%;
+}
+
+.col-50 {
+  width:50%;
+}
+
+.clearfix{ /* This is just a class that we can append on a <div> to explicitly clear any floats we create. We don't have to put <div class="clearfix"></div> after rows and columns, since the :after selector takes care of clearing any floats for us */
+  clear:both; 
+}
+
+.text-center{ /* This allows us to center text inside an elm; i.e., a paragraph: <p class="text-center">Content</p> */
+  text-align: center;
+}
+
+.main-nav{ /* Class for our main navigation bar */
+  background-color:#1a1a1a;
+  min-height: 4em;
+  margin-bottom:1em;
+  position:fixed; /* Position:fixed means the bar will follow us down the page */
+  width:100%;
+  z-index: 9999; /* The z-index indicates which 'layer' the elm should render on. Much like Photoshop layers, adjusting the z-index will change the order from front to back. So 9999 is a higher z-index which means it will be on top of the other layers. Position:fixed can sometimes mean that elms beneath it will appear on top of it, hence why we use z-index */
+}
+
+.logo{
+  float:left;
+  margin:10px 0 0 10px;
+}
+
+#slider-text {
+  position:absolute; /* Absolute positioning allows us to float the slider text on top of the slider, regardless of the elm's location in our HTML file */
+  color:#fff;
+  left:33%; /* May need to play with these values */
+  top:25%;
+  padding:12px 19px;
+  margin:0;
+  background-color:rgba(0,0,0,0.5); /* Sets color and opacity in one */
+}
+
+#call_to_action {
+  display:inline-block;
+  background-color:rgba(0, 0, 0, 0.25);
+  padding:8px 15px;
+  border:2px solid white;
+  border-radius:5px;
+  position:absolute;
+  min-width:150px;
+  text-align:center;
+  left:41%;
+  top:40%;
+  font-size:2em;
+  color:white;
+  text-decoration: none;
+  transition:0.4s linear all; /* Transition gives it that smooth fading effect. Add it on both the regular rule and the hover rule to emulate a mouseenter and mouseleave */
+  text-shadow:1px 1px 1px rgba(0,0,0,0.5); /* Text shadow adds a 'drop shadow' effect on text, giving it more definition. The first value is the position of the horizontal shadow, the second value the position of the vertical shadow, the third is how much blur it should have (i.e., how soft or crisp the shadow will look), and the final value is the color. I have used 1px for the horizontal and vertical values because you want your shadows to be close to your lettering. It should be subtle but enhance contrast */
+}
+
+#call_to_action:hover{
+  border:2px solid #D41818;
+  background-color: #D41818;
+  transition:0.4s linear all;
+}
+
+#slider {
+  height: 500px; /* I changed this value */
+  overflow: hidden; /* Overflow tells the browser what to do with any content that falls outside of the specified height. In this case, hidden means that we will hide it and not show any scroll bars */
+}
+
+#slider ul{
+  margin:0; /* Remove extra margin and padding the browser adds onto the list to give it that 'indent' */
+  padding:0;
+}
+
+#slider ul li {
+  list-style-type: none; /* This removes the discs from our lists */
+}
+
+#slider ul li img {
+  width:100%; /* Sets our width of the img to be only as wide as the page. Percentage is used for responsiveness */
+}
+
+#controls > a{ /* The caret says that this rule will only affect children elms of the elm w/ id 'controls'. So if there is an <a> tag within a <div> tag inside the controls elm, it will not apply these declarations */
+  text-decoration:none; /* Remove the default underline from the link */
+  font-size:1.5em;
+  font-weight:bold;
+  color:rgba(255,255,255, 0.5);
+  position:absolute;
+  top:35%;
+  transition:0.5s linear all;
+}
+
+#controls > a:hover{ /* :hover is a CSS selector that says "when the mouse enters the elm's box, do this" */
+  color:rgba(255,255,255,1);
+  transition:0.5s linear all;
+}
+
+#prev_slide { /* since this is a child of the controls, which has absolute positioning, it inherits that positioning and you can specify where it should render from the left, right, top, and bottom */
+  left:1em; /* 1em from the left margin */
+}
+
+#next_slide{
+  right:1em; /* 1em from the right margin */
+}
+
+.arrow-bg{
+  padding:17px 15px; /* Additonal top padding since it is wider than it is tall and we want it to look like a circle */
+  border-radius:50px; /* Border radius rounds the borders of the elm */
+  background-color:rgba(0,0,0,0.75);
+  transition:0.5s linear all;
+}
+
+.arrow-bg:hover{
+  background-color:rgba(0,0,0,1);
+  transition:0.5s linear all;
+}
+
+a > img {
+  border:none; /* You may need to specify that imgs within links should not have borders; otherwise, the browser may render an ugly blue border around it */
+}
+
+ul.navigation-links{
+  float:right; /* Float your navigation links to the right */
+}
+
+ul.navigation-links > li {
+  list-style-type:none;
+  display:inline-block; /* Inline-block should be used for navigation links */
+  margin:0 1em 1em 0;
+}
+
+ul.navigation-links > li > a {
+  color:#ffffff;
+  text-decoration:none;
+  transition:0.5s linear all;
+}
+
+ul.navigation-links > li > a:hover{
+  color:#aaaaaa; /* Hexadecimal fallback for rgba */
+  opacity:0.5; /* Fallback for rgba - just so you are aware of it though you may not always need to use a fallback */
+  color:rgba(255,255,255,0.5);
+  transition: 0.5s linear all;
+}
+
+.cards li { /* I added this class just so you can see what you can do with lists */
+  list-style-type: none;
+  display: inline-block;
+  margin-right:1em;
+  min-width:200px; /* Add a min width and height to create cards */
+  min-height: 250px;
+  padding:10px;
+  background-color:gray; /* There are a handful of colors you can specify by name, including blue, red, yellow, green, etc. I just used this one for example. */
+}
+
+.form {
+  background-color:#1a1a1a;
+  opacity:0.75;
+  padding:2em;
+  border:1px solid #9A5E1F;
+  color:#fff;
+}
+
+.form fieldset {
+  border:none; /* removes the default browser border on fieldsets since it doesn't look very nice */
+  padding:1em; /* Add some spacing inside your fieldsets so we can set colors without the content looking cramped */
+  background-color:#eee;
+  color:#1a1a1a;
+}
+
+.form legend {
+  padding:0;
+  margin-bottom:1em;
+  position:relative;
+  top:1.4em;
+  font-weight:600;
+  font-family:'Raleway SemiBold', 'Helvetica Bold', 'Arial Bold', sans-serif; /* Bold legends make for easy scanning */
+}
+
+.form input[type="text"], .form input[type="email"], .form textarea{ /* You can style your form inputs too */
+  background-color:#fff; /* Get rid of any gradients in the bg */
+  padding:0.5em; /* Add more padding/room to breathe */
+  border:1px solid #cdcdcd; /* Make the border less harsh */
+  box-shadow:none; /* Removes any shadow the browser might add, which looks so 90s */
+  width:50%; /* Makes the width 50% of the parent elm */
+}
+
+
+.btn {
+  padding:0.5em 0.75em; /* Makes the button bigger, easier to click on */
+  color:white;
+  border:2px solid white;
+  font-size:1.1em;
+  background:transparent; /* A transparent background allows us to have this nice, modern button which looks clear but allows the mouse to click anywhere inside */
+}
+
+.btn:hover{
+  cursor:pointer; /* Changes the mouse from an arrow to a hand, indicating it is clickable. Links do this automatically, buttons might not */
+}
+
+.red:hover { /* Just a color class for changing the color on hover. Another way of doing it */
+  background-color:#D41818;
+  color:#fff;
+  border-color:#8A0808;
+}
+
+.footer .sitemap-links {
+  list-style-type: none;
+  display: inline-block;
+  margin-right:1em;
+}
+
+.footer .sitemap-links a {
+  text-decoration: none;
+}
+
+#sitemap {
+  float:left;
+}
+
+#social {
+  float:right;
+}
+
+ul.social-links > li {
+  list-style-type: none;
+  display:inline-block;
+  margin:0 1em 1em 0;
+}
+
+ul.social-links img {
+  width:50px;
+  height:50px;
+}
+
+#copyright{
+  font-family: "Raleway SemiBold", "Arial Bold", sans-serif;
+  padding-bottom:1em;
+}
