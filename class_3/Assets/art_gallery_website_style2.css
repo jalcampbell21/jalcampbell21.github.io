@@ -11,7 +11,7 @@ body {
 	padding: 0;
 	font-size: 1em;
 	font-color: #FAF0E6;
-	background-color: #FFEFD5; /* cite: color is Papayawhip from http://colours.neilorangepeel.com */
+	background-color: #F7F5DA; /* cite: color is Papayawhip from http://colours.neilorangepeel.com */
 }
 
 a {
@@ -37,6 +37,7 @@ p {
 
 .main-header {
 	font-style: italic;
+	color:#EB4D4D;
 	padding-left: 6%;
 	margin-top: 7%;
 	text-align: left;
@@ -62,15 +63,33 @@ p {
 .child-art-photos-div ul li {
 	float: left;
 	width: 28.33%;
-	margin: auto;
-	padding: 2%;
+	margin: 1%;
 	list-style: none;
+	border: 3px solid #F5B39F;
+	border-radius: 5px;
 }
 
 .child-art-photos-div li p {
 	margin: 0;
 	font-size: 0.75em;
 	text-align: center;
+	background:#F5B39F; 
+}
+
+.child-art-photos-div a {
+	text-decoration: none;
+}
+
+.child-art-photos-div a:link {
+	color:#482C22;
+}
+
+.child-art-photos-div a:visited {
+	color:#824B38;
+}
+
+.child-art-photos-div a:hover {
+	color:#EB4D4D;
 }
 
 .child-art-photos-div-bottom-nav {
@@ -98,8 +117,27 @@ p {
 	font-size: 0.8em;
 }
 
-.child-about-div-top-nav ul li {
+.child-about-div-top-nav ul li a {
 	padding: 1%;
+	text-decoration: none;
+}
+
+.child-about-div-top-nav ul li a:link {
+	padding: 1%;
+	text-decoration: none;
+	color:#482C22;
+}
+
+.child-about-div-top-nav ul li a:visited {
+	padding: 1%;
+	text-decoration: none;
+	color:#824B38;
+}
+
+.child-about-div-top-nav ul li a:hover {
+	padding: 1%;
+	text-decoration: none;
+	color:#F5B39F;
 }
 
 
@@ -112,6 +150,7 @@ p {
 	margin: 0 0 0 20%;
 	padding-top: 5%;
 	font-size: 0.8em;
+	color:#EB4D4D;
 	border-top-style: solid;
 	border-top-width: 1px;
 	border-top-color: #778899;
@@ -121,6 +160,7 @@ p {
 	margin: 5% 0 0 20%;
 	padding: 0;
 	font-size: 0.8em;
+	color:#482C22;
 	padding-bottom: 5%;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
@@ -146,7 +186,6 @@ p {
 }
 
 
-
 /*------------ Footer ------------*/
 
 .main-footer {
@@ -154,6 +193,22 @@ p {
 	padding: 2% 2% 3% 6%;
 	margin: 2% 0 0 0;
 
+}
+
+#next-link:link{
+	color:#482C22;
+}
+
+#next-link:visited{
+	color:#824B38;
+}
+
+#next-link:hover{
+	color:#F5B39F;
+}
+
+#copyright {
+	color:#482C22;
 }
 
 
