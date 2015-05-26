@@ -1,0 +1,145 @@
+<!DOCTYPE html> <!-- Start with the DOCTYPE declaration, which is different from the HTML tag -->
+<html> <!-- html tags wrap the entire document -->
+	<head>
+		<title>Restaurant Site</title> <!-- The title is what you will see in the top bar of your browser or your bookmarks -->
+		<meta charset="UTF-8"> <!-- meta tags give additional info about the site; this one tells what character set to use -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:600,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="assets/style.css">
+		<script src="#"></script>
+	</head>
+	<body> <!-- The visible content of the page goes in the body tags -->
+  <!-- When writing HTML, think of the way you want to organize your content. Since HTML is all about semantic structure then it's important to write for your content, not just the design. 
+  
+  You can do a lot with CSS to change the presentation of a webpage - see http://www.csszengarden.com/ for examples of how the same HTML can look differently based on stylesheets.
+  -->
+		<header>
+			<nav> <!-- nav is an html5 element used for indicating the navigation section -->
+				<a href="#">
+					<img src="#" alt="Restaurant Site Logo"> <!-- always use alt text. It's not just for when the image is broken, but for screen readers and web crawlers (SEO) -->
+				</a>
+				<ul> <!-- Navigation links are always marked up as unordered lists - this is for screenreaders and other assistive technology to be able to accurately tab between each item -->
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<h1>Restaurant Site</h1> <!-- headings are h1 - h6. Lower heading numbers indicate more important content such as section titles -->
+		<div id="slider"> <!-- This will be a slider -->
+			<ul id="slides">
+				<li><img src="#" alt="Patio of Restaurant Site"></li>
+				<li><img src="#" alt="Interior of Restaurant Site"></li>
+				<li><img src="#" alt="Party event in main room"></li>
+			</ul>
+			<span id="controls"> <!--spans are inline tags-->
+				<!-- comment -->
+				<a href="#">&lt; &lt;</a> <!-- This is the code for the less than ( < ) symbol -->
+				<a href="#">&gt; &gt;</a> <!-- code for the greater than symbol ( > ) -->
+			</span>
+		</div>
+		<hr> <!-- horizontal rule to segment the page -->
+		<section> <!-- section is just for semantics, to describe to developer and crawlers that this is a new section -->
+			<header>
+				<h2>About Us</h2>
+			</header>
+
+			<h3>Our History</h3>
+			<p>Located in the heart of downtown Charlotte, Restaurant Site offers a brand new dining experience.</p>
+			<a href="#">Historic story of the restaurant</a>
+
+			<h3>The team</h3>
+			<ul> <!-- ul is the outer tag for an unordered list. It tells the li (list item) element to create bullet points -->
+				<li>Head Chef - Bert Reynolds</li>
+				<li>Head Hostess - Kristy Carter</li>
+				<li>Chef - Lisa Thompson</li>
+			</ul>
+			<a href="#">How we craft your dining experience</a>
+		</section>
+		<hr>
+		<section>
+			<header>
+				<h2>Menu</h2>
+			</header>
+			<h3>Meals Served</h3>
+			<ol> <!-- ol is the tag for an ordered list. It tells the li element to create numbers -->
+				<li>Breakfast: 7AM - 11AM</li>
+				<li>Lunch: 11AM - 3:30PM</li>
+				<li>Dinner: 3:30PM - 11PM</li>
+			</ol>
+			<h3>Foods</h3>
+			<ul>
+				<li>Appetizers</li>
+				<li>Burgers</li>
+				<li>Seafood</li>
+				<li>Pancakes & Waffles</li>
+				<li>Sandwiches</li>
+				<li>Coffee & Tea</li>
+				<li>Wines</li>
+			</ul>
+		</section>
+		<hr>
+
+		<section>
+			<header>
+				<h2>Contact Us</h2>
+			</header>
+			<p>Please fill out the fields in the form below. Fields marked with an asterisk (*) are required.</p>
+			<form role="form"> <!-- form is the tag used to indicate all the following belongs to a form that will be submited to the server. Role is used for assistive technology to indicate that this is to be used as a form -->
+				<fieldset> <!-- fieldset groups related fields in the form -->
+					<legend>Contact Information:</legend> <!-- legend is used to describe the fieldset and the info it captures -->
+					<label for="firstname">First name:</label> <input type="text" id="firstname" placeholder="Enter your first name"> <!-- Use type="text" for short strings of text -->
+					<br>
+					<label for="lastname">Last name:</label> <input type="text" id="lastname" placeholder="Enter your last name">
+					<br>
+					<label for="email">Email:</label> <input type="email" id="email" placeholder="Enter email"> <!-- email is an html5 type that will help when writing JS validation to check for a valid email address; it also pops up a different keyboard on mobile -->
+					<br>
+					<label for="phone">Phone:</label> <input type="text" id="phone" placeholder="Enter phone">
+					<br>
+				</fieldset>
+				<fieldset>
+					<legend>Message:</legend>
+					<label for="message">Message body:</label> <textarea rows="4" cols="50" id="message">Enter message here</textarea> <!-- textarea should be used for larger chunks of text since it's more user friendly; you can tell it how tall (rows) and how wide (cols) to be -->
+				</fieldset>
+				<fieldset>
+					<legend>How do you want us to contact you?<legend>
+					<input type="radio" name="contactmethod" value="email" id="email"> <label for="email">Email</label> <!-- I forgot to cover it in class, but the name attribute for radio buttons is used to group the radio buttons so only one can be selected at a time-->
+					<br>
+					<input type="radio" name="contactmethod" value="phone" id="telephone"> <label for="telephone">Phone</label>
+					<br>
+				</fieldset>
+				
+				<label for="discovery_method">How did you hear about us?</label>
+				<select id="discovery_method"> <!-- select is the tag for a dropdown. Each line item in the dropdown is marked up using the option tag -->
+					<option value="Google">Google</option> <!-- The value attribute is used to send to the server; whatever you put inside the value attribute (even if it is different from the text between the tags) will be the value sent -->
+					<option value="Facebook">Facebook</option>
+					<option value="Friend">A Friend</option>
+					<option value="Ads">Ads</option>
+				</select>
+				<br>
+				<input type="checkbox" value="false" id="newsletter_signup"> <label for="newsletter_signup">Sign me up for the newsletter</label>
+				<br>
+				<button type="submit">Submit</button> <!-- Use type="submit" to tell the form that when this button is clicked, the data should be sent to the server (whatever script or page you would put in the action attribute on the form element if we had a back end. In other words, <form role="form" action="save.php"> where save.php is the file that will handle the data and connect to the backend) -->
+			</form>
+		</section>
+
+		<footer> <!-- footer is the element used for the end of the section or the bottom most section on the page -->
+			<h4>Site map</h4>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+
+			<h4>Social media</h4>
+			<ul>
+				<li>
+					<a href="#"><img src="#" alt="Facebook"></a>
+				</li>
+				<li>
+					<a href="#"><img src="#" alt="Twitter"></a>
+				</li>
+			</ul>
+			<small>&copy; 2015 Restaurant Site</small>
+		</footer>
+
+	</body>
+</html>

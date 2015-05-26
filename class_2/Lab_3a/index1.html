@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tuscan-Italian Restaurant</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="#">
+		<script src="#"></script>	
+	</head>
+
+	<body>
+		<header>
+				<h1>Tuscan-Italian Restaurant</h1>
+			<nav>
+				<a href="#">
+					<img src="#" alt="Restaurant Logo">
+				</a>
+			<ul>
+				<li><a href="index1.html">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Menus</a></li>
+				<li><a href="#">Specials</a></li>
+				<li><a href="#">Reservations/Online Ordering</a></li>
+				<li><a href="#">E-Club</a></li>
+			</ul>
+			</nav>
+			<address>
+				Address:  1234 Culinary Road, Charlotte, NC 28207
+				<br>
+				Phone: (704)-555-5555
+			</address>
+			<h6>Want to join our E-Club to receive special offers? Sign up with us below!</h6>
+			<form>
+				<label for="e-mail address">E-mail Address:</label>
+				<input type="e-mail" id="e-mail" placeholder="Enter e-mail">
+			</form>
+		</header>
+		
+		<hr>
+
+		<section>
+			<header>
+				<div id="slider">
+					<ul id="slides">
+						<li><img src="#" alt="Menu Item Photo 1"></li>
+						<li><img src="#" alt="Menu Item Photo 2"></li>
+						<li><img src="#" alt="Menu Item Photo 3"></li>
+					</ul>
+					<span id="controls">
+						<a href="#">&lt; &lt;</a>
+						<a href="#">&gt; &gt;</a>
+					</span>
+				</div>
+			</header>
+		</section>
+
+		<hr>
+
+		<section>
+			<header>
+				<h4>About our food</h4>
+					<img src="#" alt="Chef's Preparation Table With Fresh Vegetables">
+					<p>Our food is prepared using locally grown organic ingredients. We provide our guests with an upscale, yet rustic experience by combining a luxurious space for families to dine, and delicious food made from simple ingredients. Let us wow your tastebuds!</p>
+			</header>
+		</section>
+		
+		<hr>
+		
+		<section>
+			<header>
+				<h4>What people are saying</h4>
+					<ul>
+						<li>
+							<a href="#"><img src="#" alt="Facebook"></a>
+							<p>Antonio Palozzi - "This place is my go-to when I want homestyle, authentic Italian food. Umm umm!"</p>
+						</li>
+						<li>
+							<a href="#"><img src="#" alt="Twitter"></a>
+							<p>michelle_raye - "They make the BEST Chicken Piccatta! We just had to try this place since it was new in Downtown Charlotte. We were satisfied."</p>
+						</li>
+						<li>
+							<a href="#"><img src="#" alt="Yelp"></a>
+							<p>Solomon Ibrahim - "...first time trying Italian-style food with friends since moving to Charlotte. I hope to return. "</p>
+						</li>
+					</ul>
+			</header>
+		</section>
+
+		<hr>
+
+		<section>
+			<header>
+				<h4>Where to find us</h4>
+					<address>
+						1234 Culinary Road
+						<br>
+						Charlotte, NC 28207
+					</address>
+					<!--I copied the script below for an interactive Google Map from this link from W3 Schools Website:  http://www.w3schools.com/googleapi/google_maps_basic.asp
+					<script
+					src="http://maps.googleapis.com/maps/api/js"> Is this okay? -->
+					<map>
+						<script src="http://maps.googleapis.com/maps/api/js"></script>
+						<script>
+						function initialize() {
+							var mapProp = {
+    							center:new google.maps.LatLng(35.2269,-80.8433),
+    							zoom:10,
+    							mapTypeId:google.maps.MapTypeId.ROADMAP
+    						};
+  							var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+						}
+						google.maps.event.addDomListener(window, 'load', initialize);
+						</script>
+
+						<body>
+						<div id="googleMap" style="width:500px;height:380px;"></div>
+						</body>
+					</map>
+			</header>
+		</section>
+
+		<hr>
+
+		<section>
+			<header>
+				<h4>Enhance your experience!</h4>
+					<h5>Reservations / Online Ordering</h5>
+						<table>
+							<tr>
+								<th>Sun <th>Mon <th>Tue <th>Wed <th>Thu <th>Fri <th>Sat
+							</tr>
+							<tr>
+								<td>29 <td>30 <td>31 <td>1 <td>2 <td>3 <td>4
+							</tr>
+							<tr>
+								<td>5 <td>6 <td>7 <td>8 <td>9 <td>10 <td>11
+							</tr>
+							<tr>
+								<td>12 <td>13 <td>14 <td>15 <td>16 <td>17 <td>18
+							</tr>
+							<tr>
+								<td>19 <td>20 <td>21 <td>22 <td>23 <td>24 <td>25
+							</tr>
+							<tr>
+								<td>26 <td>27 <td>28 <td>29 <td>30 <td>1 <td>2
+							</tr>
+						</table>
+			</header>
+		</section>
+
+		<hr>
+
+		<footer>
+			<h4>Social Media</h4>
+				<ul>
+					<li>
+						<a href="#"><img src="#" alt="Facebook"></a>
+					</li>
+					<li>
+						<a href="#"><img src="#" alt="Twitter"></a>		
+					</li>
+					<li>
+						<a href="#"><img src="#" alt="Yelp"></a>			
+					</li>
+				</ul>
+				<nav>
+					<ul>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Customer Survey</a></li>
+						<li><a href="#">Legal</a></li>
+					</ul>
+				</nav>
+			<h4>Site Map</h4>
+				<ul>
+					<li><a href="index1.html">Home</a></li>
+					<li><a href"#">About Us</a></li>
+					<li><a href"#">Menus</a></li>
+					<li><a href"#">Specials</a></li>
+					<li><a href"#">Reservations/Online Ordering</a></li>
+					<li><a href"#">E-Club</a></li>
+					<li><a href"#">Press</a></li>
+					<li><a href"#">Careers</a></li>
+					<li><a href"#">Customer Survey</a></li>
+					<li><a href"#">Legal</a></li>
+				</ul>
+
+				<br>
+			<small>&copy; 2015 Tuscan-Italian Restaurant</small>
+		</footer>
+</html>

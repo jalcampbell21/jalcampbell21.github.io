@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Restaurant Site | American Cuisine in Historic Uptown Charlotte, NC | Home</title> <!-- SEO friendly title - include name of page you're on -->
+			<link href='http://fonts.googleapis.com/css?family=Raleway:600,400' rel='stylesheet' type='text/css'> <!-- Google font link above stylesheet -->
+		<link rel="stylesheet" href="assets/style.css">
+		<script src="#"></script>
+	</head>
+
+  	<body>
+	<header class="main-nav">
+		<nav>
+			<div class="container"> <!-- Instead of one container for whole page, use multiple containers inside header, main content, and footer so your background colors won't have a margin -->
+				<a href="#">
+					<img src="#" alt="Restaurant Site Logo" class="logo">
+				</a>
+				<ul class="navigation-links">
+					<li>
+					  <a href="#">Home</a>
+					</li>
+					<li>
+					  <a href="#aboutus">About</a> <!-- These are called anchor links. If you set an elm on the page with an id of the same name, it will take you directly to that elm. For instance, here I have my about section with: <section id="aboutus">...</section> -->
+					</li>
+					<li>
+					  <a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div> <!-- Clearing my floats for the logo and the menu links-->
+		</nav>
+	</header>
+    
+	<div id="slider" class="row">
+		<div class="col-25"></div> <!-- One way of centering - I set empty cols the same width on either side of my main col -->
+		<div class="col-50">
+		  <h1 id="slider-text">Restaurant Site</h1>
+		  <a href="#menu" id="call_to_action">View Our Menu</a> <!-- call to action button-->
+		</div>
+		<div class="col-25"></div>
+		<ul id="slides">
+		  <li>
+		    <img src="assets/muffins.jpg" alt="Exterior of Restaurant Site">
+		  </li>
+		  <li>
+		    <img src="#" alt="Patio during the spring">
+		  </li>
+		  <li>
+		    <img src="#" alt="Dining area by the aquarium">
+		  </li>
+		  <li>
+		    <img src="#" alt="The bar">
+		  </li>
+		  <li>
+		    <img src="#" alt="Private event booked in the Blue Room">
+		  </li>
+		</ul>
+		<span id="controls">
+		  <a href="#" id="prev_slide" class="arrow-bg">&lt;&lt;</a>
+		  <a href="#" id="next_slide" class="arrow-bg">&gt;&gt;</a>
+		</span>
+		<div class="clearfix"></div>
+	</div>
+  
+  	<hr>
+   	<div class="container">
+      <section id="aboutus">
+        <header>
+          <h2>About Us</h2>
+        </header>
+        <section>
+          <header>
+            <h3>The new all-American dining experience</h3>
+          </header>
+          <div>
+            <p>
+              Located in the heart of downtown <strong>Charlotte, NC</strong>, Restaurant Site is proud to offer the freshest, most savory dining experience you'll find in the Queen City. From burgers to steaks to succulent desserts, we're proud to offer a wide variety of items on our menu. Our cozy downtown location is open daily for <strong>breakfast, lunch, and dinner</strong>.
+            </p>
+            <a href="#">Historic story behind the restaurant >></a>
+          </div>
+        </section>
+        <div>
+          <h3>The team</h3>
+          <ul class="cards">
+            <li>Head Chef - Mark Matthews</li>
+            <li>Chef - Christy Thompson</li>
+            <li>Hostess - Leah Carmen</li>
+          </ul>
+          <a href="#">How we craft your dining experience >></a>
+        </div>
+      </section>
+      
+      <hr>
+      
+      <section id="menu">
+        <header>
+          <h2>Menu</h2>
+        </header>
+        <h3>Meals Served:</h3>
+        <ol>
+          <li>Breakfast: 7AM - 11AM</li>
+          <li>Lunch: 11AM - 4:30PM</li>
+          <li>Dinner: 4:30PM - 11PM</li>
+        </ol>
+      </section>
+  
+      <section>
+        <header>
+          <h3>Foods:</h3>
+        </header>
+        <ul>
+        <li>Appetizers</li>
+        <li>Burgers & Sandwiches</li>
+        <li>Pancakes & Waffles</li>
+        <li>Sodas</li>
+        <li>Salads</li>
+        <li>Coffee & Tea</li>
+        <li>Soups</li>
+        <li>Steaks & Filets</li>
+        <li>A la carte</li>
+        <li>Desserts</li>
+      </ul>
+      
+      </section>
+      <hr>
+      <section id="contact">
+        <header>
+          <h2>Contact Us</h2>
+        </header>
+        <p>Please use the form to enter your message or make a reservation and we'll get back to you.</p>
+        <p>Fields marked with an asterisk (*) are required.</p>
+        <form class="form">
+          <fieldset>
+            <legend>Contact Information:</legend>
+            <div>
+              <label for="first_name">*First name:</label> <input type="text" placeholder="Enter your first name" id="first_name">
+            </div>
+            <br>
+            <div>
+              <label for="last_name">*Last name:</label> <input type="text" placeholder="Enter your last name" id="last_name">
+            </div>
+            <br>
+            <div>
+              <label for="email_address">*Email Address:</label> <input type="email" placeholder="Enter your email" id="email_address">
+            </div>
+            <br>
+            <div>
+              <label for="phone_number">Phone Number:</label> <input type="text" placeholder="Enter your phone number" id="phone_number">
+            </div>
+            <br>
+          </fieldset>
+          <fieldset>
+            <legend>Message</legend>
+            <div>
+              <label for="message">*Message:</label> <textarea rows="4" cols="50" id="message">Enter message...</textarea>
+            </div>
+            <br>
+          </fieldset>
+          <fieldset>
+              <legend>How do you want us to contact you?</legend>
+              <input type="radio" name="contactmethod" value="email" id="email"> <label for="email">Email</label>
+              <br>
+              <input type="radio" name="contactmethod" value="phone" id="telephone"> <label for="telephone">Phone</label>
+            <br>
+          </fieldset>
+          <br>
+            <label for="discovery_method">How did you hear about us?</label>
+            <select id="discovery_method">
+              <option value="Google">Google</option>
+              <option value="Facebook">Facebook</option>
+              <option value="ads">Ads</option>
+              <option value="friend">Friend</option>
+            </select>
+          <br>
+          <div>
+              <input type="checkbox" value="false"> <label for="sign up for email specials">Sign me up to receive specials and coupons via email</label>
+            </div>
+            <br>
+            <button type="submit" class="btn red">Send message</button>
+          </form>
+      </section>
+      
+      <hr>
+    </div><!--container-->
+    
+    <footer class="footer">
+      <div class="container">
+
+        <section id="sitemap">
+          <h4>Site map</h4>
+          <ul class="sitemap-links">
+            <li>
+              <a href="#">Home</a> |
+              <a href="#aboutus">About Us</a> |
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </section>
+
+        <section id="social">
+          <h4>Follow us on social media</h4>
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <img src="assets/fb.png" alt="Facebook">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/twitter.png" alt="Twitter">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/instagram.png" alt="Instagram">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div class="clearfix"></div>
+        <div class="row text-center">
+          <small id="copyright">&copy; 2015 Restaurant Site</small>
+        </div>
+      </div><!--container-->
+    </footer>
+    
+  </body>
+</html>
