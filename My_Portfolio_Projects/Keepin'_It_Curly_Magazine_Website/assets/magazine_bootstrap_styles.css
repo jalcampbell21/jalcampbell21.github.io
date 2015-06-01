@@ -18,7 +18,7 @@ body {
 /*--------Featured Story Section/Jumbotron--------*/
 
 .jumbotron {
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.5) !important;
 
 }
 
@@ -34,26 +34,26 @@ body {
 /*--------Main Navigation Bar--------*/
 
 .navbar{
-	background: #886994;
+	background: #886994 !important;
 }
 
-.navbar-header > .navbar-brand:link {
+.navbar-header > .navbar-brand {
 	font-family:'Dancing Script', cursive;
 	font-size: 1.7em;
+	color: papayawhip !important;
 }
 
-.navbar-header > .navbar-brand:link,
-#nav-links:link, {
-	color: #e5dfd4;
+.nav-links {
+	color: papayawhip !important;
 }
 
-.navbar-header > .navbar-brand:visited, #nav-links:visited {
-	color: #dbd2c3;
+.navbar-header > .navbar-brand:visited, .nav-links:visited {
+	color: #cfc3d4 !important;
 }
 
 .navbar-header:hover > .navbar-brand:hover,
-#nav-links:hover {
-	color: #bacab4;
+.nav-links:hover {
+	color: #bacab4 !important;
 }
 
 
@@ -72,8 +72,8 @@ h2 {
 	font-weight: bold;
 }
 
-.article-link:link, .image-link:link {
-	color: #886994;
+.article-link, .image-link {
+	color: #886994 !important;
 }
 
 .article-link:visited, .image-link:visited {
@@ -82,6 +82,10 @@ h2 {
 
 .article-link:hover, .image-link:hover  {
 	color: #76956A;
+}
+
+.panel-heading{
+	background-color: #e7e1e9 !important;
 }
 
 
@@ -94,7 +98,7 @@ h2 {
 
 .sidebar-h3-header:hover {
 	text-decoration: none;
-	color: #a39888;
+	color: #8c7f6c;
 }
 
 .lorem-para-text {
@@ -102,7 +106,9 @@ h2 {
 }
 
 .lorem-para-text:hover {
-	color: #76956A;
+	color: #8c7f6c;
 }
 
-
+.label {
+	background-color:#76956A ;
+}
