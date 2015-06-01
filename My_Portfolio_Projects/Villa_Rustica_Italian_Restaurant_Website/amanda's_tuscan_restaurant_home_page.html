@@ -7,7 +7,6 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="assets/amanda's_restaurant_style.css">
 		<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700|IM+Fell+Double+Pica+SC' rel='stylesheet' type='text/css'>
-		<script src="#"></script>	
 	</head>
 	<body>
 
@@ -50,20 +49,59 @@
 
 		<!--IMG GALLERY DIV-->
 		<!--Figure out how to get the slider working-->
-		<div id="image-gallery">
-			<ul>
-				<li><img src="http://cdn.morguefile.com/imageData/public/files/m/mabo06/preview/fldr_2012_07_02/file3611341262531.jpg" alt="Menu Item Photo 1"></li>
-				<li><img src="http://cdn.morguefile.com/imageData/public/files/h/hotblack/preview/fldr_2008_11_02/file00089355730.jpg" alt="Menu Item Photo 2"></li>
-				<li><img src="http://cdn.morguefile.com/imageData/public/files/m/mensatic/preview/fldr_2012_07_19/file9471342745578.jpg" alt="Menu Item Photo 3"></li>
-			</ul>
+
+		<ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+		<div class="slide">
+			<img src="http://cdn.morguefile.com/imageData/public/files/m/mabo06/preview/fldr_2012_07_02/file3611341262531.jpg" alt="Spaghetti with Meat Sauce" />
+        </div>
+		<div class="nav">
+			<label for="img-6" class="prev">&#x2039;</label>
+			<label for="img-2" class="next">&#x203a;</label>
 		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="http://cdn.morguefile.com/imageData/public/files/h/hotblack/preview/fldr_2008_11_02/file00089355730.jpg" alt="Fresh Bell Peppers, Garlic, and Tomatoes" />
+        </div>
+		<div class="nav">
+			<label for="img-1" class="prev">&#x2039;</label>
+			<label for="img-3" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="http://cdn.morguefile.com/imageData/public/files/m/mensatic/preview/fldr_2012_07_19/file9471342745578.jpg" alt="Red Pepper and Spinach Pizza" />
+        </div>
+		<div class="nav">
+			<label for="img-2" class="prev">&#x2039;</label>
+			<label for="img-4" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+    </li>
+</ul>
+
+
 		<!-- add a border here to replace horizontal rule -->
 
 		<div clas="clearfix"></div>
+
 		<!--SHORT ABOUT DIV-->
 		<div class='short-about'>
-			<h4>About our food</h4>
-			<p>Our food is prepared using locally grown organic ingredients. We provide our guests with an upscale, yet rustic experience by combining a luxurious space for families to dine, and delicious food made from simple ingredients. Let us wow your tastebuds!</p>
+			<h4 id='short-about-header'>About our food</h4>
+			<p id='short-about-para'>Our food is prepared using locally grown organic ingredients. We provide our guests with an upscale, yet rustic experience by combining a luxurious space for families to dine, and delicious food made from simple ingredients. Let us wow your tastebuds!</p>
 		</div>
 		<!-- add a border here to replace horizontal rule -->
 
@@ -121,22 +159,21 @@
 		<!-- add a border here to replace horizontal rule -->
 
 		<!--RESERVATIONS DIV-->
-		<!--Create a drop down tab for the dates if possible..don't quite know how but find out-->
-		<div class='reservations-div'> <!--WOULD LIKE TO MAKE THIS AN INTERACTIVE DROP-DOWN FOR RESERVATIONS-->
+		<div class='reservations-div'>
 			<h5>Enhance your experience!</h5>
 			<h3>Reservations / Online Ordering</h3>
-			<table id="reservations-table"> <!--I really want to do something different instead of a table-->
-				<thead>
-					<tr>
-						<th>Sun</th>
-						<th>Mon</th>
-						<th>Tue</th>
-						<th>Wed</th>
-						<th>Thu</th>
-						<th>Fri</th>
-						<th>Sat</th>
-					</tr>
-				</thead>
+		<table id="reservations-table">
+			<thead>
+				<tr>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+			</thead>
 				<tbody>
 					<tr>
 						<td>29</td>
