@@ -14,3 +14,7 @@ body {
   height: 350px;
   width: 200px;
 }
+
+#page-header {
+	margin: 0 auto;
+}
