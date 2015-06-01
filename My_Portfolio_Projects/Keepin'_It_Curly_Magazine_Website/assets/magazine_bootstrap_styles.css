@@ -15,22 +15,6 @@ body {
 
 
 
-/*--------Featured Story Section/Jumbotron--------*/
-
-.jumbotron {
-	background: rgba(255, 255, 255, 0.5) !important;
-
-}
-
-.jumbotron > .text-center {
-	color: #a39888;
-	font-family:'Dancing Script', cursive;
-	font-size: 2.5em;
-	font-weight: bold;
-}
-
-
-
 /*--------Main Navigation Bar--------*/
 
 .navbar{
@@ -54,6 +38,22 @@ body {
 .navbar-header:hover > .navbar-brand:hover,
 .nav-links:hover {
 	color: #bacab4 !important;
+}
+
+
+
+/*--------Featured Story Section/Jumbotron--------*/
+
+.jumbotron {
+	background: rgba(255, 255, 255, 0.5) !important;
+
+}
+
+.jumbotron > .text-center {
+	color: #a39888;
+	font-family:'Dancing Script', cursive;
+	font-size: 2.5em;
+	font-weight: bold;
 }
 
 
@@ -112,3 +112,5 @@ h2 {
 .label {
 	background-color:#76956A ;
 }
+
+

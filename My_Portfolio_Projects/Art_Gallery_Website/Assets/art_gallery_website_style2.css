@@ -1,6 +1,9 @@
 /**************************************
 GENERAL: UNIVERSAL AND TYPE SELECTORS
 **************************************/
+
+/* Quick note about the color scheme: The name of the palette is "Rosa Cake shelf 1" by Rosalie409 from www.colourlovers.com. This is the link: "http://www.colourlovers.com/palette/1715623/Rosa_Cake_shelf_1" */
+
 * {
   box-sizing: border-box;
 }
@@ -11,7 +14,7 @@ body {
 	padding: 0;
 	font-size: 1em;
 	font-color: #FAF0E6;
-	background-color: #F7F5DA; /* cite: color is Papayawhip from http://colours.neilorangepeel.com */
+	background-color: #F7F5DA;
 }
 
 a {
@@ -30,12 +33,13 @@ p {
 
 
 /**************************************
- CLASS SELECTORS
+ CLASS AND ID SELECTORS
 **************************************/
 
 /*------------ Main Header ------------*/
 
 .main-header {
+	font-family: 'Lobster Two', cursive;
 	font-style: italic;
 	color:#EB4D4D;
 	padding-left: 6%;
@@ -46,7 +50,7 @@ p {
 
 
 
-/*------------ Div 1 ------------*/
+/*------------ Div 1 / Art Gallery Photos & Bottom Nav------------*/
 
 .parent-div {
 	max-width: 100%;
@@ -89,7 +93,7 @@ p {
 }
 
 .child-art-photos-div a:hover {
-	color:#EB4D4D;
+	color:#e83636;
 }
 
 .child-art-photos-div-bottom-nav {
@@ -101,7 +105,7 @@ p {
 
 
 
-/*------------ Div 2 ------------*/
+/*------------ Div 2 / Navigation, Art Gallery About, Social Media Icons------------*/
 
 .child-about-div {
 	margin: 0;
@@ -122,7 +126,7 @@ p {
 	text-decoration: none;
 }
 
-.child-about-div-top-nav ul li a:link {
+.child-about-div-top-nav ul li a {
 	padding: 1%;
 	text-decoration: none;
 	color:#482C22;
@@ -137,14 +141,14 @@ p {
 .child-about-div-top-nav ul li a:hover {
 	padding: 1%;
 	text-decoration: none;
-	color:#F5B39F;
+	color:#f08e71;
 }
 
 
 
-/*------------section 1------------*/
+/*------------ art gallery about / section 1------------*/
 
-.sec-1-about h4 {
+h4 {
 	display: block;
 	text-align: left;
 	margin: 0 0 0 20%;
@@ -155,6 +159,15 @@ p {
 	border-top-width: 1px;
 	border-top-color: #778899;
 }
+
+h5 {
+	display: block;
+	text-align: left;
+	margin: 0 0 0 20%;
+	padding-top: 5%;
+	font-size: 0.8em;
+	color:#EB4D4D;
+}
 .sec-1-about p {
 	text-align: left;
 	margin: 5% 0 0 20%;
@@ -162,14 +175,21 @@ p {
 	font-size: 0.8em;
 	color:#482C22;
 	padding-bottom: 5%;
+}
+
+#contributor-para {
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	border-bottom-color: #778899;
 }
 
+#staff-email-link {
+	color:#824B38;
+}
 
 
-/*------------section 2------------*/
+
+/*------------social media icons / section 2------------*/
 
 .sec-2-social-icons {
 	max-width: 960px;
@@ -186,6 +206,7 @@ p {
 }
 
 
+
 /*------------ Footer ------------*/
 
 .main-footer {
@@ -195,8 +216,8 @@ p {
 
 }
 
-#next-link:link{
-	color:#482C22;
+#next-link{
+	color:#000;
 }
 
 #next-link:visited{
@@ -223,5 +244,3 @@ FLOAT CLEARFIX
 }
 
 
-
-/* NOTE ABOUT COLOR SCHEME PALETTE USED:  http://www.colourlovers.com/palette/1715623/Rosa_Cake_shelf_1; */

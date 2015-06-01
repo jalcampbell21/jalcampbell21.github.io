@@ -1,6 +1,7 @@
 /**************************************
 GENERAL: UNIVERSAL AND TYPE SELECTORS
 **************************************/
+
 * {
   box-sizing: border-box;
 }
@@ -39,7 +40,7 @@ p {
 
 
 /**************************************
- CLASS SELECTORS
+ CLASS AND ID SELECTORS
 **************************************/
 
 /*------------ Heading Div ------------*/
@@ -93,7 +94,6 @@ p {
 /*------------ Nav Div ------------*/
 
 .main-nav {
-/*	background-color: #A15B5B; */ 
 	background-color: #A17A5B;
 	max-width: 100%;
 	clear: both;
@@ -124,7 +124,8 @@ p {
 
 
 
-/*------------ Slider Div ------------*/
+/*------------ Img Gallery Div ------------*/
+/* Here begins the code for the slider by Avi Kohn from "http://codepen.io/AMKohn/pen/EKJHf" */
 
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
@@ -241,7 +242,6 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 
 /*------------ Short About Div------------*/
 
-
 .short-about {
 	background: linear-gradient(papayawhip, transparent 50%),
 				linear-gradient(0deg, papayawhip, transparent),
@@ -257,10 +257,8 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 
 
 
-
-
-
 /*------------ Reviews Div------------*/
+
 .reviews-div {
 	max-width: 100%;
 	padding: 10%;
@@ -289,6 +287,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 }
 
 
+
 /*------------ Location Div ------------*/
 
 .location-div {
@@ -297,7 +296,6 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	background-image: background-image: url('wood.jpg');
 	color:#F2E9E0;
 	margin: 50px;
-
 }
 
 .location-div h4 {
@@ -308,13 +306,15 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	margin: 0 auto;
 }
 
+
+
 /*------------ Reservations Div ------------*/
+
 .reservations-div {
 	padding: 5%;
 	background-image: url('wood.jpg');
 	color:#F2E9E0;
 	margin: 50px;
-
 }
 
 .reservations-div h5,
@@ -325,6 +325,9 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 #reservations-table {
 	margin: 0 auto;
 }
+
+
+
 /*------------ Main Footer ------------*/
 
 .main-footer {
@@ -349,7 +352,9 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 }
 
 
+
 /*------------ Social Media Icons ------------*/
+
 .social-media-icons {
 	text-align: center;
 	max-width: 100%;
@@ -367,7 +372,9 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 }
 
 
+
 /*------------ Site Map Nav ------------*/
+
 #site-map-div {
 	background-color:#A17A5B;
 	padding: 1.5%;
@@ -384,7 +391,6 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	padding: 1%;
 	display: inline;
 }
-
 
 #site-map-nav li a:link {
 	color: #F2E9E0;
