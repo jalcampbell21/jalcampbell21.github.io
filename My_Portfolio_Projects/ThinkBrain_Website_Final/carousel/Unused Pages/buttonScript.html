@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Button test</title>
+  </head>
+  <body>
+
+    <div>
+      <button id="book-me" type="submit" value="25" onclick="goCheckout(this.value)">Book Me</button>
+    </div>
+    <div id="dropDownMenu">
+      <select id="dropdown">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+  </div>
+
+    <script>
+
+            function goCheckout(value) {
+              value = value;
+              //Pulls Value from the button and stores in var x
+              var x = document.getElementById("book-me").value;
+              //Pulls value from dropdown and stores on var y
+              var y = document.getElementById("dropdown").value;
+              //document.write(x,y);
+              var z = x * y
+              document.write("$" + z + " " + value);
+            //window.open('checkout.html','_target');
+          }
+
+
+    </script>
+
+  </body>
+</html>

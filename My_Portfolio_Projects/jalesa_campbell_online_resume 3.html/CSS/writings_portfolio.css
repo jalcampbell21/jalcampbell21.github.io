@@ -1,0 +1,224 @@
+/************   BODY   ************/ 
+body {
+	margin: 0 auto;
+	padding:0;
+	background-color:fff;
+	font-family: 'Source Serif Pro', serif;
+}
+
+
+
+/************ LINKS *************/
+a:link{
+	color:white;
+}
+
+.link-color:link {
+	color:#404040;
+}
+
+
+a:unvisited {
+	color:#ccc;
+}
+
+a:visited {
+	color:indianred;
+}
+
+a:hover {
+	color:#ffc67a
+}
+
+
+
+
+/************  NAV   ************/ 
+
+.nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+	background-color: #404040;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+	text-decoration:none;
+}
+
+
+
+/************  Headlines   ************/ 
+h2 {
+	display:block;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:30px;
+	width:600px;
+}
+
+h3 {
+	display:block;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:30px;
+	width:600px;
+}
+
+summary {
+	display:block;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:5px;
+	width:600px;
+}
+
+.summary-ul {
+	display:block;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:5px;
+	width:600px;
+}
+
+#summary-ul-last {
+	display:block;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:5px;
+	padding-bottom:5px;
+	width:600px;
+}
+
+#portfolio-section {
+	padding-bottom:30px;
+}
+
+/************   formal-education section ID   ************/ 
+#formal-edu h3 {
+	display:block;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	width: 600px;
+	color:#000;
+}
+
+#formal-edu {
+	display:block;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	width: 600px;
+}
+
+
+
+
+/************   continuing-education section ID   ************/ 
+
+#continuing-edu h3{
+	display:block;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	width:600px;
+	color:#000;
+}
+
+#continuing-edu ul{
+	display:block;
+	text-align: left;
+	margin-left:40px;
+	margin-right:auto;
+	padding:0;
+	width:600px;
+}
+
+#continuing-edu{
+	display:block;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	width:600px;
+}
+
+
+
+/************   accomplishments section ID  ************/ 
+#accomplishments h3 {
+	display:block;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	width:600px;
+	color:#000;
+}
+
+#accomplishments {
+	display:block;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	width:600px;
+}
+
+
+
+/************   activities section ID  ************/ 
+#activities-volunteering h3 {
+	display:block;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	width:600px;
+	color:#000;
+}
+
+#activities-volunteering {
+	display:block;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:30px;
+	width:600px;
+}
+
+
+
+
+/************   LEARN MORE SECTION (bottom of page)  ************/ 
+
+.learn-more {
+	display:inline-block;
+	margin:0 auto;
+	padding:0;
+	width:100%;
+	background-color: #404040;
+}
+
+.learn-more div {
+	text-align:center;
+	color:#ccc;
+/*	margin-left:13%;*/
+	padding:2%;
+}	

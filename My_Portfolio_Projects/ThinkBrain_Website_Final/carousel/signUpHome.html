@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="Logo.ico">
+
+    <title>Sign Up</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+
+
+
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container-fluid">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><!--<img src="#" height="10px"/>-->ThinkBrain&trade; | Connect With A Tutor Today!</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+				        <li><a href="tutors.html">Tutors</a></li>
+				        <li><a href="howItWorks.html">How Our Service Works</a></li>
+			  	      <li class="active"><a href="signUpHome.html">Sign Up</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+				        <li><a href="contactUs.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+	<div class="container marketing">
+
+	<!--form title-->
+		<div class="row featurette">
+		<br/><br/>
+			<img src="Logo.png" width="80" height="80"/><h2 class="featurette-heading"> Ready to Get Started?</h2>
+			<p class="lead"><br/>Sign up in just a few easy steps</p>
+
+		<hr class="featurette-divider">
+				</div>
+		<!--end title, begin form-->
+		<form method="post" action="http://google.com">
+
+			<input type="hidden" name="recipient"
+				value ="pattersonl28@yahoo.com">
+			<input type="hidden" name="subject"
+				value ="Signup Form">
+			<input type="hidden" name="redirect"
+				value ="tutors.html">
+
+				<!--begin form fields-->
+				<p><label>Last Name:
+					<input name="name" type="text" size="25" placeholder="Last Name"></label></p>
+				<p><label>First Name:
+					<input name="name" type="text" size="25" placeholder="First Name"></label></p>
+				<p><label>Email:
+					<input name="name" type="text" size="45" placeholder="user@domain.com"></label></p>
+
+				<p>
+				<strong>Tutor or Student?<br/></strong>
+				<label>Tutor
+				<input name="type" type="radio" value="tutor">
+				</label>
+				<label>Student
+				<input name="type" type="radio" value="tutor">
+				</label>
+				</p>
+
+				<p>
+					<strong>Student type: </strong><br>
+
+					<label>Elementary
+						<input name="studenttype" type="radio" value="elementary"></label>
+					<label>Middle School
+						<input name="studenttype" type="radio" value="middleschool"></label>
+					<label>High School
+						<input name="studenttype" type="radio" value="highschool"></label>
+					<label>College
+						<input name="studenttype" type="radio" value="college"></label>
+					<label>Independent
+						<input name="studenttype" type="radio" value="independent"></label>
+					<label>Other/ NA
+						<input name="studenttype" type="radio" value="other"></label>
+				</p>
+				<p>
+					<strong>Interests (Input Tutor Strengths Here): </strong><br>
+
+					<label>Math
+						<input name="interests" type="checkbox" value="math"></label>
+					<label>English
+						<input name="interests" type="checkbox" value="english"></label>
+					<label>Science
+						<input name="interests" type="checkbox" value="science"></label>
+					<label>History & Social Studies
+						<input name="interests" type="checkbox" value="hss"></label>
+					<label>Foreign Language
+						<input name="interests" type="checkbox" value="language"></label>
+					<label>Computer Science
+						<input name="interests" type="checkbox" value="compscience"></label>
+					<label>Miscellaneous
+						<input name="interests" type="checkbox" value="miscellaneous"></label>
+				</p>
+				<p><label>Create a username:
+				<input name="username" type="text" size="30"></label></p>
+				<p><label>Create a password:
+				<input name="password" type="password" size="30"></label></p>
+				<p><label>Re-type password:
+				<input name="passwordconfirm" type="password" size="30"></label></p>
+				<script>
+				function thanks(){
+				alert("Thank you!"); //thanks the user for signing up
+				}
+				</script>
+				<input type="reset" value="Submit" onclick="thanks();"> <!--submission button with function-->
+	</div>
+  </body>
+</html>

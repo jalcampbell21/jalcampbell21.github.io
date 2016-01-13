@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="Logo.ico">
+
+    <title>Tutors</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container-fluid">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">ThinkBrain&trade; | Connect With A Tutor Today!</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+				<li class="active"><a href="tutors.html">Tutors</a></li>
+				<li><a href="howItWorks.html">How Our Service Works</a></li>
+			  	<li><a href="signUpHome.html">Sign Up</a></li>
+				<li><a href="faqs.html">FAQs</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+<!--                    <li role="separator" class="divider"></li>-->
+<!--                    <li class="dropdown-header">More</li>-->
+
+					  <li><a href="team.html">Team</a></li>
+					  <li><a href="userLogin.html">Login</a></li>
+					 <li><a href="search.html">Search</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+    <div class="content tutor-layout">
+      <script type="text/javascript">
+
+        //Declare Counter Variables
+          var i = 0;
+          var j = 0;
+
+        //Array to hold the object headings
+          var headings = ["fName", "lName", "textSum", "city", "subject", "contact", "rate", "imageUrl"];
+        //Array to hold the object names
+          var tutorName = [];
+        //Placeholder array to hold object calls
+          var objectCalls = [];
+
+        //Variable to build each tutor object
+          //Tutor 1
+          var john = new tutor ("John", "Smith",
+          "I have a passion for learning and sharing that knowledge with other people to help them through their own learning process. My educational studies and personal reading have always gravitated towards the history of this country.",
+          "Rock Hill, SC", "American History, Government, Social Studies", "Skype, Hangouts, Phone, In Person", "25", "Tutor Pics/313037.crop.jpg")
+            tutorName.push("john");//Adds new person to the tutorName array.
+
+          //Tutor 2
+          var cindy = new tutor ("Cindy", "Campbell",
+          "I am a returning English as a Foreign Language Teacher. I have a Certificate in English Language Teaching to Adults. I am also a French and History major from Gettysburg College. I pride myself in creating different ways to interest students in learning.",
+          "Columbia, SC", "English, French, History", "In Person, Skype", "50", "Tutor Pics/31343131.crop.jpg")
+            tutorName.push("cindy");//Adds new person to the tutorName array.
+
+          //Tutor 3
+          var susan = new tutor ("Susan", "Stricker",
+          "I teach an Advanced English Conversation course to a variety of native Spanish speakers. I have also taught International Law at the University level and various high school courses.",
+          "Mathews, NC", "Econonics, Law, Swimming", "Skype, Hangouts", "35", "Tutor Pics/5205.crop.jpg")
+            tutorName.push("susan");//Adds new person to the tutorName array.
+
+          //Tutor 4
+          var sarah = new tutor ("Sarah", "Johnson",
+          "I have Bachelor's degrees in English and Equine Studies from, as well as 7 semester's of tutoring experience in the private college and community college settings.",
+          "Gastonia, NC", "English, Writing, Grammar, Editing", "Skype, Hangouts, FaceTime, In Person", "25", "Tutor Pics/32303239.crop.jpg")
+            tutorName.push("sarah");//Adds new person to the tutorName array.
+
+          //Tutor 5
+          var joan = new tutor ("Joan", "Thomas",
+          "I have a bachelor's of Science in Biochemistry (3.9 GPA). I am currently pursuing a medical coding training. I have about two years of tutoring experience, helping High School students and fellow college classmates understand the concepts that they find hard to comprehend.",
+          "Charlotte, NC", "Calculus, Algebra, Chemistry", "Skype, Hangouts, In Person", "30", "Tutor Pics/31343731.crop.jpg")
+            tutorName.push("joan");//Adds new person to the tutorName array.
+
+          //Tutor 6
+          var mark = new tutor ("Mark", "Stevenson",
+          "I hold a Bachelor of Science degree in Biology/Chemistry and a Professional Educator Certification in Biology and Chemistry. In addition, I am a full-time Chemistry Teacher. My teaching/tutoring methods utilize many different types of instructional techniques.",
+          "Fort Mill, SC", "Chemistry, Biology, Ecology, Zoology", "In Person", "45", "Tutor Pics/31353439.crop.jpg")
+            tutorName.push("mark");//Adds new person to the tutorName array.
+
+          //Tutor 7
+          var tamara = new tutor ("Tamara", "Thompson",
+          "After receiving an M.Ed in Elementary Education I was given the opportunity to teach few years in primary schools before heading to higher education administration. In conjunction with working in the field of Higher Education for the past 3 1/2 years, I have am pursuing a doctorate in Higher Education Leadership and Organizational Leadership. My love for reading a writing has definitely lead me to wanting to help others. My key aim in tutoring is to build confidence; confidence breeds success and success breeds confidence.",
+          "Mooresville, NC", "Reading, Editing, Writing, Special Needs", "Skype, Hangouts, In Person", "75", "Tutor Pics/31343130.crop.jpg")
+            tutorName.push("tamara");//Adds new person to the tutorName array.
+
+          //Tutor 8
+          var frank = new tutor ("Frank", "Footer",
+          " have a Bachelors in History with a German minor. My specialties for history are American History, Early European History, Medieval History, and Classical History. I have about 8 years of German experience, prior hands-on experience in Germany, and have been proven near fluent by the German state proficiency test, so I can tutor anywhere from high school to intermediate college German!",
+          "Kannapolis, NC", "American History, European History, German, World History", "Skype, Hangouts, In Person", "20", "/Tutor Pics/31313136.crop.jpg")
+            tutorName.push("frank");//Adds new person to the tutorName array.
+/*
+
+          //Tutor 9
+          var brice = new tutor ("Brice", "Mitchell",
+          "I have 7 years of experience in Radiology, including 5+ years of CT experience. I would love to help you on your journey to becoming a registered technologist!",
+          "Rock Hill", "Radiology", "Skype", "25", "/home/bricebm/Dropbox/York Tech/IST-226/Group Project/Bootstrap/bootstrap-3.3.5/docs/examples/carousel/Tutor Pics/hardeep-c--1813815.png")
+            //tutorName.push("brice");//Adds new person to the tutorName array.
+
+          //Tutor 10
+          var jalesa = new tutor ("Jalesa", "Campbell",
+          "I have a B.A. in English and 5+ years of experience proofreading academic and professional documents.",
+          "Chester", "English", "Skype", "20", "/home/bricebm/Dropbox/York Tech/IST-226/Group Project/Bootstrap/bootstrap-3.3.5/docs/examples/carousel/2015-09-02.jpg")
+  		      //tutorName.push("jalesa");//Adds new person to the tutorName array.
+*/
+
+        //Construction for tutors
+          function tutor(fName, lName, textSum, city, subject, contact, rate, imageUrl) {
+           this.fName = fName;
+           this.lName = lName;
+           this.textSum = textSum;
+           this.city = city;
+           this.subject = subject;
+           this.contact = contact;
+           this.rate = rate;
+           this.imageUrl = imageUrl;
+          }
+
+
+
+        //For loop to build profiles
+          for (var i = 0; i < tutorName.length; i++) {
+            for (var j = 0; j < headings.length; j++) {
+              objectCalls[j] = eval(tutorName[i] + '.' + headings[j]);
+            }
+            //HTML to build each tutor profile dynamically
+              document.write('<div class="container custom-container ' + tutorName[i] + '" ><div class="content">');
+              document.write('<div id="pick"><img src="' + objectCalls[7] + '"/></div>');//Trying to figure out a way to integrate an image
+              document.write('<div id="tutorText"><h1><span id="fName">' + objectCalls[0] + '</span> <span id="lName">' + objectCalls[1] + '</span></h1>');
+              document.write('<p id="summary"><span id="textSum">' + objectCalls[2] + '</span></p>');
+              document.write('<ul><li><strong>City:</strong> <span id="city">' + objectCalls[3] + '</span></li>');
+              document.write('<li><strong>Subject:</strong> <span id="subject">' + objectCalls[4] + '</span></li>');
+              document.write('<li><strong>Methods of Contact:</strong> <span id="contact">' + objectCalls[5] + '</span></li>');
+              document.write('<li><strong>Rate:</strong> $<span id="rate">' + objectCalls[6] + '</span></li>');
+              document.write('</ul></div><div id="book-me"><button class="btn btn-default" id="book-me" type="submit" onclick="goCheckout();">Book Me</button></div><div id="dropdown"><select class="form-control"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div></div></div>');
+
+              //document.write('<input type="text" class="form-control" placeholder="Text input">');
+            }
+
+      </script>
+    </div>
+
+    <!--Calls function goCheckout() to take users to the Checkout Page-->
+    <script>
+            function goCheckout() {
+            window.open('checkout.html','_target');
+          }
+    </script>
+
+
+
+<!--TEST SCRIPT FOR LS-->
+
+    <script>
+    
+    function() 
+    	var price = document.getElementById("dropdown") * objectCalls[5];
+    	console.log price;
+
+    </script>
+
+
+
+
+
+
+  </body>
+</html>

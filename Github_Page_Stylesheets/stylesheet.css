@@ -20,4 +20,8 @@ body {
 	margin-right: 5% !important;
 	margin-top: 5% !important;
 }
+#bio-photo {
+  height: 350px;
+  width: 200px;
+}
 

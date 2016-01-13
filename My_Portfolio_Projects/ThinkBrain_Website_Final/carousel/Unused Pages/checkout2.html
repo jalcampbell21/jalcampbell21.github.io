@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="Logo.ico">
+
+    <title>ThinkBrain&trade; | Connect with a tutor today!</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+	<style>
+	body{
+		margin-left: 250px;
+		margin-right: 250px;
+		padding: 20px;
+	}
+	</style>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container-fluid">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">ThinkBrain&trade; | Connect With A Tutor Today!</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+				        <li><a href="tutors.html">Tutors</a></li>
+				        <li><a href="howItWorks.html">How Our Service Works</a></li>
+			  	      <li><a href="signUpHome.html">Sign Up</a></li>
+				        <li><a href="faqs.html">FAQs</a></li>
+				        <li><a href="contactUs.html">Contact Us</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">More</li>
+
+            <li><a href="team.html">Team</a></li>
+            <li><a href="userLogin.html">Login</a></li>
+           <li><a href="search.html">Search</a></li>
+           <li class="active"><a href="checkout.html">Checkout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+    <div id="container2">
+	<br/>
+	<br/>
+      <h1>Checkout</h1>
+
+      <h3>Breakdown of Tutorial Service Charge</h3>
+      <table class="table">
+        <thead>
+          <tr>
+          <th>Tutor</th>
+          <th>Student</th>
+          <th>Tutor Hours</th>
+          <th>Tutor Rate</th>
+          <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th id="tutor-name"></th>
+            <th id="student-name"></th>
+            <th id="tutor-hours"></th>
+            <th id="tutor-rate"></th>
+            <th id="total"></th>
+        </tbody>
+
+      </table>
+
+    </div>
+    <script type="text/javascript">
+      function checkout() {
+        document.getElementById("tutor-name").innerHTML = localStorage.getItem("tutorName");
+        document.getElementById("tutor-hours").innerHTML = localStorage.getItem("tutorHours");
+        document.getElementById("tutor-rate").innerHTML = localStorage.getItem("tutorRate");
+        document.getElementById("total").innerHTML = localStorage.getItem("tutorRate");
+      }
+
+      checkout();
+    </script>
+
+  </body>
+</html>
